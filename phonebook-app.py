@@ -5,17 +5,11 @@ from flaskext.mysql import MySQL
 # Create an object named app
 app = Flask(__name__)
 
-# This "/home/ec2-user/dbserver.endpoint" file has to be created from cloudformation template and it has RDS endpoint
-db_endpoint = open("/root/dbserver.endpoint", 'r', encoding='UTF-8') 
-
-# Configure mysql database
-
-app.config['MYSQL_DATABASE_HOST'] = db_endpoint.readline().strip()
+app.config['MYSQL_DATABASE_HOST'] = 
 app.config['MYSQL_DATABASE_USER'] = 'admin'
-app.config['MYSQL_DATABASE_PASSWORD'] = '12yigit123'
+app.config['MYSQL_DATABASE_PASSWORD'] = 'Yigit123'
 app.config['MYSQL_DATABASE_DB'] = 'yigit_phonebook'
 app.config['MYSQL_DATABASE_PORT'] = 3306
-db_endpoint.close()
 mysql = MySQL()
 mysql.init_app(app) 
 connection = mysql.connect()
