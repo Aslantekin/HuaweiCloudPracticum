@@ -3,7 +3,7 @@ from flaskext.mysql import MySQL
 
 app = Flask(__name__)
 
-app.config['MYSQL_DATABASE_HOST'] = '49.0.206.16'
+app.config['MYSQL_DATABASE_HOST'] = '49.0.204.110'
 app.config['MYSQL_DATABASE_USER'] = 'root'
 app.config['MYSQL_DATABASE_PASSWORD'] = 'Yigit123'
 app.config['MYSQL_DATABASE_DB'] = 'yigit_phonebook'
