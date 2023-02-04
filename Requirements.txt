@@ -1,5 +1,5 @@
-RDS
-ECS
+Relational Database Service (RDS-MySQL, db engine 5.7, 2 vCPUs, 8 GB)
+Elastic Cloud Server (ECS-General computing, s3.large.2, 2 vCPUs,	4 GB)
 python3
 flask
 flask_mysql
